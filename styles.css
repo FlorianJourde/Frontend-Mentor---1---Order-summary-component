@@ -1,0 +1,141 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #e0e8ff;
+  z-index: -1;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-blue {
+  color: #1f2f56;
+}
+
+.grey {
+  color: #7280a7;
+}
+
+.purple {
+  color: #3829e0;
+}
+
+.image-header {
+  background-image: url("images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.card {
+  background-color: white;
+  max-width: 400px;
+  max-height: 800px;
+  text-align: center;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: #c2d1ff 0 10px 40px;
+}
+
+.content {
+  padding: 30px;
+}
+.content__title {
+  font-size: 25px;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.content__description {
+  padding-bottom: 20px;
+}
+
+.discount {
+  background-color: #f5f7ff;
+  display: flex;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.discount__plan {
+  text-align: left;
+  flex: 1;
+  margin: auto;
+}
+.discount__title {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.discount__icon-music {
+  margin: auto;
+  margin-right: 20px;
+}
+.discount__option {
+  margin: auto;
+  font-weight: 900;
+  font-size: 14px;
+  transition: color 0.25s;
+}
+.discount__option:hover {
+  color: #8b82ed;
+  text-decoration: none;
+}
+
+.order-button a {
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.order-button--primary {
+  padding: 15px;
+  background-color: #3829e0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  display: block;
+  box-shadow: #b4aff4 0 10px 40px;
+  transition: background-color 0.25s;
+}
+.order-button--primary:hover {
+  background-color: #8b82ed;
+}
+.order-button--tertiary {
+  color: #7280a7;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: color 0.25s;
+}
+.order-button--tertiary:hover {
+  color: black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    margin: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
