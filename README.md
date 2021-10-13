@@ -10,4 +10,4 @@ First exercice from Frontend Mentor website. The purpose is to train HTML, SCSS.
 
 **HTML, SCSS**
 
-[Preview-site](https://order-summary-card-solution-with-scss.onrender.com/)
+[Preview-site](https://florianjourde.github.io/Frontend-Mentor-1-Order-summary-component/)
