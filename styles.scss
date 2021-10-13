@@ -27,6 +27,20 @@ $dark-blue: hsl(223, 47%, 23%);
   flex-direction: column;
 }
 
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
 .dark-blue {
   color : $dark-blue;
 }
@@ -45,12 +59,12 @@ $dark-blue: hsl(223, 47%, 23%);
   border-radius: 20px 20px 0 0;
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 220px;
 }
 
 .card {
   background-color: white;
-  max-width: 400px;
+  max-width: 450px;
   max-height: 800px;
   text-align: center;
   margin: auto;
@@ -59,17 +73,14 @@ $dark-blue: hsl(223, 47%, 23%);
 }
 
 .content {
-  padding: 30px;
+  padding: 50px;
 
-  &__title {
-    font-size: 25px;
-    font-weight: 900;
-    padding-top: 10px;
+  h1 {
     padding-bottom: 20px;
   }
 
-  &__description {
-    padding-bottom: 20px;
+  h2 {
+    margin-bottom: 5px;
   }
 }
 
@@ -79,16 +90,12 @@ $dark-blue: hsl(223, 47%, 23%);
   padding: 25px;
   border-radius: 10px;
   margin-bottom: 30px;
+  margin-top: 20px;
 
   &__plan {
     text-align: left;
     flex: 1;
     margin: auto;
-  }
-
-  &__title {
-    font-weight: 900;
-    margin-bottom: 5px;
   }
 
   &__icon-music {
@@ -135,8 +142,6 @@ $dark-blue: hsl(223, 47%, 23%);
   &--tertiary {
     color: $desaturated-blue;
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
     transition: color 0.25s;
   }
 
@@ -157,6 +162,10 @@ $dark-blue: hsl(223, 47%, 23%);
 
 @media screen and (max-width: 500px) {
   .card {
-    margin: 20px
+    margin: 20px;
+  }
+
+  .content {
+    padding: 25px;
   }
 }

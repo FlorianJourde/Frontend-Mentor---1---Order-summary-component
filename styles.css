@@ -18,6 +18,20 @@
   flex-direction: column;
 }
 
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
 .dark-blue {
   color: #1f2f56;
 }
@@ -36,12 +50,12 @@
   border-radius: 20px 20px 0 0;
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 220px;
 }
 
 .card {
   background-color: white;
-  max-width: 400px;
+  max-width: 450px;
   max-height: 800px;
   text-align: center;
   margin: auto;
@@ -50,16 +64,13 @@
 }
 
 .content {
-  padding: 30px;
+  padding: 50px;
 }
-.content__title {
-  font-size: 25px;
-  font-weight: 900;
-  padding-top: 10px;
+.content h1 {
   padding-bottom: 20px;
 }
-.content__description {
-  padding-bottom: 20px;
+.content h2 {
+  margin-bottom: 5px;
 }
 
 .discount {
@@ -68,15 +79,12 @@
   padding: 25px;
   border-radius: 10px;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .discount__plan {
   text-align: left;
   flex: 1;
   margin: auto;
-}
-.discount__title {
-  font-weight: 900;
-  margin-bottom: 5px;
 }
 .discount__icon-music {
   margin: auto;
@@ -115,8 +123,6 @@
 .order-button--tertiary {
   color: #7280a7;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
   transition: color 0.25s;
 }
 .order-button--tertiary:hover {
@@ -136,6 +142,10 @@
 @media screen and (max-width: 500px) {
   .card {
     margin: 20px;
+  }
+
+  .content {
+    padding: 25px;
   }
 }
 
